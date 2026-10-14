@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FoodMunch — discover delicious food, explore our menu, and enjoy every bite.">
+  <title>FoodMunch | Good Food, Good Mood</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="FoodMunch home"><span class="brand-icon">✦</span> Food<span>Munch</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#menu">Explore Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#delivery">Delivery</a></li>
+        <li><a class="nav-cta" href="#menu">Order Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">FRESH • FLAVORFUL • MADE WITH LOVE</p>
+        <h1>Good food.<br><span>Great mood.</span></h1>
+        <p class="hero-copy">Your cravings called. Discover delicious favorites, fresh ingredients, and flavors worth sharing.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#menu">Explore Menu <span>→</span></a>
+          <a class="button button-outline" href="#about">Our Story</a>
+        </div>
+        <div class="hero-note"><span class="note-stars">★★★★★</span> <span>Loved by food lovers everywhere</span></div>
+      </div>
+      <div class="hero-badge"><strong>100%</strong><span>Fresh & tasty</span></div>
+    </section>
+
+    <section class="benefits section" id="about">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">WHY FOODMUNCH?</p>
+          <h2>A little more <span>delicious</span></h2>
+          <p>From the first bite to the last, we make every meal feel special.</p>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card"><div class="benefit-icon">🥬</div><h3>Fresh Ingredients</h3><p>Quality ingredients and vibrant flavors come together in every dish.</p></article>
+          <article class="benefit-card"><div class="benefit-icon">🍳</div><h3>Made with Care</h3><p>Every order is prepared with care to make your meal memorable.</p></article>
+          <article class="benefit-card"><div class="benefit-icon">🚀</div><h3>Quick Delivery</h3><p>Your favorites, packed thoughtfully and ready to enjoy.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="container">
+        <div class="section-heading menu-heading">
+          <div><p class="eyebrow">MADE FOR YOUR CRAVINGS</p><h2>Explore our <span>menu</span></h2></div>
+          <p>Find your next favorite, from comfort-food classics to fresh, feel-good bites.</p>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter menu items">
+          <button class="filter-btn selected" data-filter="all">All items</button>
+          <button class="filter-btn" data-filter="meals">Meals</button>
+          <button class="filter-btn" data-filter="snacks">Snacks</button>
+          <button class="filter-btn" data-filter="drinks">Drinks</button>
+        </div>
+        <div class="food-grid" id="foodGrid">
+          <article class="food-card" data-category="meals">
+            <div class="food-image food-burger"><span class="food-emoji">🍔</span><span class="food-tag">Bestseller</span></div>
+            <div class="food-info"><div class="food-title"><h3>Classic Burger</h3><span class="price">₹199</span></div><p>Juicy, savory, and stacked with fresh favorites.</p><div class="food-bottom"><span class="rating">★★★★★ <small>4.9</small></span><button class="add-btn" data-item="Classic Burger" aria-label="Add Classic Burger">+</button></div></div>
+          </article>
+          <article class="food-card" data-category="meals">
+            <div class="food-image food-pizza"><span class="food-emoji">🍕</span><span class="food-tag">Popular</span></div>
+            <div class="food-info"><div class="food-title"><h3>Garden Pizza</h3><span class="price">₹249</span></div><p>Golden crust, rich cheese, and colorful toppings.</p><div class="food-bottom"><span class="rating">★★★★★ <small>4.8</small></span><button class="add-btn" data-item="Garden Pizza" aria-label="Add Garden Pizza">+</button></div></div>
+          </article>
+          <article class="food-card" data-category="meals">
+            <div class="food-image food-bowl"><span class="food-emoji">🥗</span><span class="food-tag">Fresh pick</span></div>
+            <div class="food-info"><div class="food-title"><h3>Rainbow Bowl</h3><span class="price">₹179</span></div><p>A colorful mix of crisp greens and wholesome goodness.</p><div class="food-bottom"><span class="rating">★★★★★ <small>4.7</small></span><button class="add-btn" data-item="Rainbow Bowl" aria-label="Add Rainbow Bowl">+</button></div></div>
+          </article>
+          <article class="food-card" data-category="snacks">
+            <div class="food-image food-fries"><span class="food-emoji">🍟</span></div>
+            <div class="food-info"><div class="food-title"><h3>Crispy Fries</h3><span class="price">₹99</span></div><p>Crunchy on the outside, fluffy in the middle.</p><div class="food-bottom"><span class="rating">★★★★★ <small>4.8</small></span><button class="add-btn" data-item="Crispy Fries" aria-label="Add Crispy Fries">+</button></div></div>
+          </article>
+          <article class="food-card" data-category="snacks">
+            <div class="food-image food-wrap"><span class="food-emoji">🌯</span></div>
+            <div class="food-info"><div class="food-title"><h3>Paneer Wrap</h3><span class="price">₹149</span></div><p>Soft wrap filled with spiced paneer and crunchy veggies.</p><div class="food-bottom"><span class="rating">★★★★★ <small>4.6</small></span><button class="add-btn" data-item="Paneer Wrap" aria-label="Add Paneer Wrap">+</button></div></div>
+          </article>
+          <article class="food-card" data-category="drinks">
+            <div class="food-image food-drink"><span class="food-emoji">🥤</span></div>
+            <div class="food-info"><div class="food-title"><h3>Berry Cooler</h3><span class="price">₹119</span></div><p>A refreshing, fruity sip to brighten your day.</p><div class="food-bottom"><span class="rating">★★★★★ <small>4.7</small></span><button class="add-btn" data-item="Berry Cooler" aria-label="Add Berry Cooler">+</button></div></div>
+          </article>
+        </div>
+        <p class="menu-message" id="menuMessage" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="video-section section" id="delivery">
+      <div class="container video-layout">
+        <div class="video-art" aria-label="Food preparation preview">
+          <div class="video-orbit orbit-one"></div><div class="video-orbit orbit-two"></div>
+          <div class="video-food">🍜</div>
+          <button class="play-button" id="videoButton" aria-label="Play food preview">▶</button>
+          <span class="video-label">A taste of FoodMunch</span>
+        </div>
+        <div class="video-copy">
+          <p class="eyebrow">SEE IT. CRAVE IT. LOVE IT.</p>
+          <h2>Great food looks<br><span>even better up close.</span></h2>
+          <p>Get a clear view of the food you love with our food-preview experience. Explore the menu, discover your favorites, and make your next meal an easy choice.</p>
+          <ul class="check-list"><li>✓ Browse a wide range of food items with ease</li><li>✓ Enjoy a responsive, mobile-first experience</li><li>✓ Discover dishes through visual previews</li></ul>
+          <a class="button button-primary" href="#menu">Find your favorite <span>→</span></a>
+          <p class="video-status" id="videoStatus" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter section">
+      <div class="container newsletter-inner">
+        <div><p class="eyebrow">A LITTLE TREAT FOR YOUR INBOX</p><h2>Stay hungry for <span>something good.</span></h2><p>Get menu highlights and tasty updates from FoodMunch.</p></div>
+        <form id="newsletterForm" class="newsletter-form"><label class="sr-only" for="emailInput">Your email address</label><input id="emailInput" type="email" placeholder="Enter your email address" required><button class="button button-primary" type="submit">Sign me up <span>→</span></button><p id="newsletterMessage" aria-live="polite"></p></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div><a class="brand footer-brand" href="#home"><span class="brand-icon">✦</span> Food<span>Munch</span></a><p>Good food, warm moments, and flavors that bring people together.</p></div>
+      <div><h3>Explore</h3><a href="#home">Home</a><a href="#menu">Our Menu</a><a href="#about">About Us</a></div>
+      <div><h3>Say hello</h3><a href="mailto:hello@foodmunch.example">hello@foodmunch.example</a><p>Open daily · 10 AM – 10 PM</p></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> FoodMunch. Made with a little extra flavor.</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
